@@ -64,20 +64,21 @@ __Mode d'emploi:__
 *only_partially_mapped.fasta* : Ce fichier FASTA contient un read (read 1 ou read 2) qui est mappée et l'autre (read 1 ou read 2) qui est partiellement mappée.
 
 
-__Exemples:__ 
-Etape 1: 
 
-<img height ="500" src="https://github.com/Fadwa7/PROJET_SAM/blob/3ecbd6cee04dd8c574e031907c0e26a0927d9077/Etape1.png">
+__FAQ:__: 
+
+🔷 __Quelle est la durée moyenne du traitement d'un seul fichier ?__
+  
+  *ça varie entre 5 à 15 minutes, selon la taille des fichiers*
+  
+🔷 __Pourquoi vous avez utilisé nohup ?__ 
+ 
+ *Nohup est une commande qui permet de lancer un processus qui restera actif même après la déconnexion de l'utilisateur, notre choix s'est porté sur cette commande, car la console de python, ne permet pas d'afficher tous les résultats de traitement, mais Nohup permet d'affichier le script entier en fichier externe*
+ 
+🔷__Si vous avez d'autres questions techniques, veuillez nous contacter par e-mails affichés en Haut__ 
+ 
 
 
-
-Etape 2
-
-<img height ="500" src="https://github.com/Fadwa7/PROJET_SAM/blob/3ecbd6cee04dd8c574e031907c0e26a0927d9077/Etape2.png">
-
-Etape 3 
-
-<img height ="500" src="https://github.com/Fadwa7/PROJET_SAM/blob/3ecbd6cee04dd8c574e031907c0e26a0927d9077/Etape3.png">
 
 
 
