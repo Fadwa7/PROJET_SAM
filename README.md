@@ -65,9 +65,19 @@ __Mode d'emploi:__
 
 
 __Exemples:__ 
+Etape 1: 
+
+<img height ="500" src="https://github.com/Fadwa7/PROJET_SAM/blob/3ecbd6cee04dd8c574e031907c0e26a0927d9077/Etape1.png">
 
 
 
+Etape 2
+
+<img height ="500" src="https://github.com/Fadwa7/PROJET_SAM/blob/3ecbd6cee04dd8c574e031907c0e26a0927d9077/Etape2.png">
+
+Etape 3 
+
+<img height ="500" src="https://github.com/Fadwa7/PROJET_SAM/blob/3ecbd6cee04dd8c574e031907c0e26a0927d9077/Etape3.png">
 
 
 
