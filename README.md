@@ -3,7 +3,7 @@
 Hi , welcome to our project. 😊
 
 __Présentation :__  
-SAMREADER est un script python qui permet à ses utilisateurs de manipuler les fichiers de type SAM, et pouvoir en extraire les informations dont ils ont besoin.
+SAMSUM est un script python qui permet à ses utilisateurs de manipuler les fichiers de type SAM, et pouvoir en extraire les informations dont ils ont besoin.
 
 __Auteurs:__ 
 AICHOUNE WAFA, EL KHADDAR FADWA
@@ -75,7 +75,7 @@ __FAQ:__:
  
  *Nohup est une commande qui permet de lancer un processus qui restera actif même après la déconnexion de l'utilisateur, notre choix s'est porté sur cette commande, car la console de python, ne permet pas d'afficher tous les résultats de traitement, mais Nohup permet d'affichier le script entier en fichier externe*
  
-🔷__Si vous avez d'autres questions techniques, veuillez nous contacter par e-mails affichés en Haut__ 
+__BYE__ ✨ 
  
 
 
