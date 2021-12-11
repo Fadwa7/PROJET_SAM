@@ -3,9 +3,7 @@
 Hi , welcome to our project. 😊
 
 __Présentation :__  
-SAMSUM est un script python qui permet à ses utilisateurs de manipuler les fichiers de type SAM, et pouvoir en extraire les informations dont ils ont besoin.
-
-__Auteurs:__ 
+SAMSUM est un script python qui permet à ses utilisateurs de manipuler les fichiers de type SAM (Section Algnement/Map format). SAM est  un fichier de format de texte délimité par des tabulations composé d'une section Header, et une section d'alignement comportant 11 sections dont les sections FLAG et CIGAR. SAMSUN permet d'extraire les informations contenues dans les FLAG et CIGAR.
 AICHOUNE WAFA, EL KHADDAR FADWA
 
 __contact:__  
@@ -39,7 +37,7 @@ __Mode d'emploi:__
 
 🔴 Première étape : 
 
- - Télécharger le script python "script.py" via le lien https://github.com/Fadwa7/PROJET_SAM.git, et déposer le dans votre fichier SAM dans un seul répertoire.
+ - Télécharger le script python "script.py" via le lien https://github.com/Fadwa7/PROJET_SAM.git, et déposer le dans un répertoire contenant également le fichier SAM que vous souhaiter traité.
 
 🔴 Deuxième étape : 
 
@@ -69,7 +67,7 @@ __FAQ:__:
 
 🔷 __Quelle est la durée moyenne du traitement d'un seul fichier ?__
   
-  *ça varie entre 5 à 15 minutes, selon la taille des fichiers*
+  *La durée moyenne de traitement d'un fichier SAM par SAMSUN varie entre 5 à 15 minutes, selon la taille du fichier SAM traité*
   
 🔷 __Pourquoi vous avez utilisé nohup ?__ 
  
