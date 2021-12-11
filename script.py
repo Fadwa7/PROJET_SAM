@@ -3,18 +3,18 @@ import sys
 import re
 
 
-def flagBinary(flag) :
+def flagBinary(flag) : #fonction : convertion du FLAG en binaire
 
     flagB = bin(int(flag)) # Transform the integer into a binary.
     flagB = flagB[2:] # Remove '0b' Example: '0b1001101' > '1001101'
     flagB = list(flagB) 
     if len(flagB) < 12: # Size adjustement to 12 (maximal flag size)
         add = 12 - len(flagB) # We compute the difference between the maximal flag size (12) and the length of the binary flag.
-        for t in range(add):
+        for t in range(add): 
             flagB.insert(0,'0') # We insert 0 to complete until the maximal flag size.
     return flagB
                 
-def unmapped(line):
+def unmapped(line): # fonction comptage des reads non mappés
     
     unmapped_count = 0
     with open ("only_unmapped.fasta", "a+") as unmapped_fasta, open("summary_unmapped.txt", "w") as summary_file:
@@ -29,7 +29,7 @@ def unmapped(line):
         summary_file.write("Total unmapped reads: " + str(unmapped_count) + "\n") 
     return unmapped_count
 
-def partiallyMapped(line):
+def partiallyMapped(line): # fonction de comptage des reads partiellement mappés
     
     partially_mapped_count = 0
 
@@ -45,7 +45,7 @@ def partiallyMapped(line):
         summary_file.write("Total partially mapped reads: " + str(partially_mapped_count) + "\n") 
     return partially_mapped_count
 
-def go() :
+def go() :   #fonction d'execution du script de lecture, stockage et analyse d'un fichier SAM
     print(sys.argv[0])
     print(sys.argv[1])
     file = sys.argv[1]
@@ -72,7 +72,7 @@ def go() :
                             print("-----------------Header------------- : ", Header)
                         else:                                                       
                             if len(Header) == 0: # verifier que la section header existe
-                                print("SAM ERRONE : il n'y a pas de header dans ce fichier")
+                                print("SAM ERRONE : ce fichier SAM ne contient pas de section HEADER")
                                 exit()
                             else :
                                 unmapped(line)
@@ -82,7 +82,7 @@ def go() :
                                 cigar.append(separedLines[5]) #insérer le contenu du cigar dans la liste cigar
                 
                 print("------------------------------------------------------- FLAG -------------------------------------------------------")
-                if len(flag)==0 : #vérifier que la section flag existe bien
+                if len(flag)==0 : #vérifier que la liste FLAG existe bien
                     print("SAM ERRONE: le FLAG est vide")
                 else :
 
@@ -93,13 +93,11 @@ def go() :
                     print("binary flag ", flagBinary(f))
 
                 print("------------------------------------------------------- CIGAR --------------------------------------------------------")
-                if len(cigar)==0 :
+                if len(cigar)==0 : #vérifier que la liste CIGAR existe bien
                     print ("SAM ERRONE : le CIGAR est vide")
                 else : 
                     
                     print(cigar)
-                
-
 
             else:
                 print("ERROR, le fichier n'est pas de type SAM")
@@ -112,7 +110,7 @@ def go() :
         exit()
 
 
-def main() : 
+def main() :  # main d'exécution du script
     go()
 
 
