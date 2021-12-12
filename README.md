@@ -33,6 +33,9 @@ Si vous n'en avez pas, vous pouvez l'installer via le lien suivant https://www.p
 
 ❗ ❗ Ce script fonctionne bien sur Linux, mais nous ne sommes pas sûres qu'il fonctionne également sur Windows.
 
+❗ ❗ Ce script ne prend en compte que les fichiers SAM non erronés et contenant impérativement une section Header. Merci de vérifier vos fichiers SAM à analyser avant de lancer le script. 
+❗ ❗ Le script ne lit qu'un fichier SAM à la fois.
+
 __Mode d'emploi:__ 
 
 🔴 Première étape : 
