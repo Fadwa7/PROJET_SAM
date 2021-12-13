@@ -4,6 +4,9 @@ Hi , welcome to our project. 😊
 
 __Présentation :__  
 SAMSUN est un script python qui permet à ses utilisateurs de manipuler les fichiers de type SAM (Section Alignement/Map format). SAM est  un fichier de format de texte délimité par des tabulations composé d'une section Header, et une section d'alignement comportant 11 sections dont les sections FLAG et CIGAR. SAMSUN permet d'extraire les informations contenues dans les FLAG et CIGAR.
+
+__Auteurs:__ 
+
 AICHOUNE WAFA, EL KHADDAR FADWA
 
 __contact:__  
