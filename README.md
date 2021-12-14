@@ -39,6 +39,8 @@ Si vous n'en avez pas, vous pouvez l'installer via le lien suivant https://www.p
 ❗ ❗ Ce script ne prend en compte que les fichiers SAM non erronés et contenant impérativement une section Header. Merci de vérifier vos fichiers SAM à analyser avant de lancer le script. 
 ❗ ❗ Le script ne lit qu'un fichier SAM à la fois.
 
+❗❗ Vous n'aurez pas besoin de télécharger des libraries spécifiques
+
 __Installation and script running:__
 
 ❗ __Pour le bon usage de script, nous vous proposons les étapes ci-dessous, MAIS, vous pouvez lancer le script selon vos préférences__ ❗
