@@ -81,7 +81,7 @@ __FAQ:__:
   
 🔷 __Pourquoi recommandez-vous d'utiliser nohup ?__ 
  
- *Nohup est une commande qui permet de lancer un processus qui restera actif même après la déconnexion de l'utilisateur, notre choix s'est porté sur cette commande, car la console de python, ne permet pas d'afficher tous les résultats de traitement, mais Nohup permet d'affichier le script entier en fichier externe. Si vous choisissez d'utiliser Nohup, nous vous recommandons de renommer vos fichiers de sortie nohup.out de la façon suivante : *
+ *Nohup est une commande qui permet de lancer un processus qui restera actif même après la déconnexion de l'utilisateur, notre choix s'est porté sur cette commande, car la console de python, ne permet pas d'afficher tous les résultats de traitement, mais Nohup permet d'affichier le script entier en fichier externe. Si vous choisissez d'utiliser Nohup, nous vous conseillons de renommer vos fichiers de sortie nohup.out de la façon suivante : nohup python3 SAMSUN.py NomFichier.sam  >  NomDuNohup.out*
  
 __BYE__ ✨ 
  
