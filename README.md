@@ -41,6 +41,8 @@ Si vous n'en avez pas, vous pouvez l'installer via le lien suivant https://www.p
 
 __Installation and script running:__
 
+❗ __Pour le bon usage de script, nous vous proposons les étapes ci-dessous, MAIS, vous pouvez lancer le script selon vos préférences__ ❗
+
 🔴 Première étape : 
 
  - Télécharger le script python "SAMSUN.py" via le lien https://github.com/Fadwa7/PROJET_SAM.git, et déposer le dans un répertoire contenant également le fichier SAM que vous souhaiter traité.
