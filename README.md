@@ -29,17 +29,17 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details
 
-__Requirement__ :
+__Pré-requis__ :
 
-Python3 est nécessaire pour le lancement du script. 
+❗❗ Python3 est nécessaire pour le lancement du script. 
 Si vous n'en avez pas, vous pouvez l'installer via le lien suivant https://www.python.org/downloads/
 
-❗ ❗ Ce script fonctionne bien sur Linux, mais nous ne sommes pas sûres qu'il fonctionne également sur Windows et sur Mac. 
+❗❗ Ce script fonctionne bien sur Linux, mais nous ne sommes pas sûres qu'il fonctionne également sur Windows et sur Mac. 
 
-❗ ❗ Ce script ne prend en compte que les fichiers SAM non erronés et contenant impérativement une section Header. Merci de vérifier vos fichiers SAM à analyser avant de lancer le script. 
-❗ ❗ Le script ne lit qu'un fichier SAM à la fois.
+❗❗ Ce script ne prend en compte que les fichiers SAM non erronés et contenant impérativement une section Header. Merci de vérifier vos fichiers SAM à analyser avant de lancer le script. 
+❗❗ Le script ne lit qu'un fichier SAM à la fois.
 
-❗❗ Vous n'aurez pas besoin de télécharger des libraries spécifiques
+❗❗ Il n'ya pas de librairies spécifiques à télécharger.
 
 __Installation and script running:__
 
@@ -55,7 +55,7 @@ __Installation and script running:__
 
 🔴 Troisième étape: 
 
-- Lancer la commande suivante : nohup python3 SAMSUN.py <__nomFichier.sam__>
+- Lancer le script. Nous vous recommandons la commande suivante : nohup python3 SAMSUN.py <__nomFichier.sam__>
 
 🔴 Quatrième Etape: 
 
@@ -79,9 +79,9 @@ __FAQ:__:
   
   *La durée moyenne de traitement d'un fichier SAM par SAMSUN varie entre 5 à 15 minutes, selon la taille du fichier SAM traité*
   
-🔷 __Pourquoi vous avez utilisé nohup ?__ 
+🔷 __Pourquoi recommandez-vous d'utiliser nohup ?__ 
  
- *Nohup est une commande qui permet de lancer un processus qui restera actif même après la déconnexion de l'utilisateur, notre choix s'est porté sur cette commande, car la console de python, ne permet pas d'afficher tous les résultats de traitement, mais Nohup permet d'affichier le script entier en fichier externe*
+ *Nohup est une commande qui permet de lancer un processus qui restera actif même après la déconnexion de l'utilisateur, notre choix s'est porté sur cette commande, car la console de python, ne permet pas d'afficher tous les résultats de traitement, mais Nohup permet d'affichier le script entier en fichier externe. Si vous choisissez d'utiliser Nohup, nous vous recommandons de renommer vos fichiers de sortie nohup.out de la façon suivante : *
  
 __BYE__ ✨ 
  
