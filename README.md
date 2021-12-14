@@ -2,10 +2,10 @@
 ## SAM PROJET FOR UE HAI724I
 Hi , welcome to our project. 😊
 
-__Présentation :__  
+__Presentation :__  
 SAMSUN est un script python qui permet à ses utilisateurs de manipuler les fichiers de type SAM (Section Alignement/Map format). SAM est  un fichier de format de texte délimité par des tabulations composé d'une section Header, et une section d'alignement comportant 11 sections dont les sections FLAG et CIGAR. SAMSUN permet d'extraire les informations contenues dans les FLAG et CIGAR.
 
-__Auteurs:__ 
+__Authors:__ 
 
 AICHOUNE WAFA, EL KHADDAR FADWA
 
@@ -29,7 +29,7 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details
 
-__Exigences:__ :
+__Requirement__ :
 
 Python3 est nécessaire pour le lancement du script. 
 Si vous n'en avez pas, vous pouvez l'installer via le lien suivant https://www.python.org/downloads/
@@ -39,11 +39,11 @@ Si vous n'en avez pas, vous pouvez l'installer via le lien suivant https://www.p
 ❗ ❗ Ce script ne prend en compte que les fichiers SAM non erronés et contenant impérativement une section Header. Merci de vérifier vos fichiers SAM à analyser avant de lancer le script. 
 ❗ ❗ Le script ne lit qu'un fichier SAM à la fois.
 
-__Mode d'emploi:__ 
+__Installation and script running:__
 
 🔴 Première étape : 
 
- - Télécharger le script python "script.py" via le lien https://github.com/Fadwa7/PROJET_SAM.git, et déposer le dans un répertoire contenant également le fichier SAM que vous souhaiter traité.
+ - Télécharger le script python "SAMSUN.py" via le lien https://github.com/Fadwa7/PROJET_SAM.git, et déposer le dans un répertoire contenant également le fichier SAM que vous souhaiter traité.
 
 🔴 Deuxième étape : 
 
@@ -51,11 +51,11 @@ __Mode d'emploi:__
 
 🔴 Troisième étape: 
 
-- Lancer la commande suivante : nohup python3 script.py <__nomFichier.sam__>
+- Lancer la commande suivante : nohup python3 SAMSUN.py <__nomFichier.sam__>
 
 🔴 Quatrième Etape: 
 
-- l'Output de cette commande, est un total de 4 fichiers décrits ci dessous: 
+- l'Output de cette commande, est un total de 5 fichiers décrits ci dessous: 
 
 *noHup.out* : C'est un fichier contenant la lecture de votre fichier SAM, ensuite une liste de la colonne FLAG suivie de son écriture binaire, et finalement le CIGAR.
 
@@ -63,9 +63,9 @@ __Mode d'emploi:__
 
 *summary_partially_mapped.txt* : Un fichier texte contenant le sommaire des reads partiellement mappés.
 
-*only_unmapped.fasta* : Un fichier FASTA contenant les reads non mappés. 
+*only_unmapped.sam* : Un fichier FASTA contenant les reads non mappés. 
 
-*only_partially_mapped.fasta* : Ce fichier FASTA contient un read (read 1 ou read 2) qui est mappée et l'autre (read 1 ou read 2) qui est partiellement mappée.
+*only_partially_mapped.sam* : Ce fichier FASTA contient un read (read 1 ou read 2) qui est mappée et l'autre (read 1 ou read 2) qui est partiellement mappée.
 
 
 
