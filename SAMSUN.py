@@ -17,14 +17,14 @@ def flagBinary(flag) : #fonction : convertion du FLAG en binaire
 def unmapped(line): # fonction comptage des reads non mappés
     
     unmapped_count = 0
-    with open ("only_unmapped.fasta", "a+") as unmapped_fasta, open("summary_unmapped.txt", "w") as summary_file:
+    with open ("only_unmapped.sam", "a+") as unmapped_sam, open("summary_unmapped.txt", "w") as summary_file:
         col_line = line.split("\t")
         print(col_line)
         flag = flagBinary(col_line[1])
 
         if int(flag[-3]) == 1:
             unmapped_count += 1
-            unmapped_fasta.write(line)
+            unmapped_sam.write(line)
 
         summary_file.write("Total unmapped reads: " + str(unmapped_count) + "\n") 
     return unmapped_count
@@ -33,19 +33,19 @@ def partiallyMapped(line): # fonction de comptage des reads partiellement mappé
     
     partially_mapped_count = 0
 
-    with open ("only_partially_mapped.fasta", "a+") as partillay_mapped_fasta, open("summary_partially_mapped.txt", "w") as summary_file:
+    with open ("only_partially_mapped.sam", "a+") as partillay_mapped_sam, open("summary_partially_mapped.txt", "w") as summary_file:
         col_line = line.split("\t")
         flag = flagBinary(col_line[1]) # We compute the same 
 
         if int(flag[-2]) == 1: 
             if col_line[5] != "100M":
                 partially_mapped_count += 1
-                partillay_mapped_fasta.write(line)
+                partillay_mapped_sam.write(line)
 
         summary_file.write("Total partially mapped reads: " + str(partially_mapped_count) + "\n") 
     return partially_mapped_count
 
-def go() :   #fonction d'execution du script de lecture, stockage et analyse d'un fichier SAM
+def main() :   #fonction d'execution du script de lecture, stockage et analyse d'un fichier SAM
     print(sys.argv[0])
     print(sys.argv[1])
     file = sys.argv[1]
@@ -111,7 +111,7 @@ def go() :   #fonction d'execution du script de lecture, stockage et analyse d'u
 
 
 def main() :  # main d'exécution du script
-    go()
+   
 
 
 
