@@ -14,10 +14,10 @@ def flagBinary(flag) : #fonction : convertion du FLAG en binaire
             flagB.insert(0,'0') # We insert 0 to complete until the maximal flag size.
     return flagB
                 
-def unmapped(line): # fonction comptage des reads non mappés
+def unmapped(line, file): # fonction comptage des reads non mappés
     
     unmapped_count = 0
-    with open ("only_unmapped.sam", "a+") as unmapped_sam, open("summary_unmapped.txt", "w") as summary_file:
+    with open (str(file) + " Only_unmapped.sam", "a+") as unmapped_sam, open(str(file) +" Summary_unmapped.txt", "w") as summary_file:
         col_line = line.split("\t")
         print(col_line)
         flag = flagBinary(col_line[1])
@@ -26,14 +26,14 @@ def unmapped(line): # fonction comptage des reads non mappés
             unmapped_count += 1
             unmapped_sam.write(line)
 
-        summary_file.write("Total unmapped reads: " + str(unmapped_count) + "\n") 
+        summary_file.write(str(file) + " Total unmapped reads: " + str(unmapped_count) + "\n") 
     return unmapped_count
 
-def partiallyMapped(line): # fonction de comptage des reads partiellement mappés
+def partiallyMapped(line, file): # fonction de comptage des reads partiellement mappés
     
     partially_mapped_count = 0
 
-    with open ("only_partially_mapped.sam", "a+") as partillay_mapped_sam, open("summary_partially_mapped.txt", "w") as summary_file:
+    with open (str(file) + " Only_partially_mapped.sam", "a+") as partillay_mapped_sam, open(str(file) + " Summary_partially_mapped.txt", "w") as summary_file:
         col_line = line.split("\t")
         flag = flagBinary(col_line[1]) # We compute the same 
 
@@ -42,10 +42,10 @@ def partiallyMapped(line): # fonction de comptage des reads partiellement mappé
                 partially_mapped_count += 1
                 partillay_mapped_sam.write(line)
 
-        summary_file.write("Total partially mapped reads: " + str(partially_mapped_count) + "\n") 
+        summary_file.write(str(file) + " Total partially mapped reads: " + str(partially_mapped_count) + "\n") 
     return partially_mapped_count
 
-def main() :   #fonction d'execution du script de lecture, stockage et analyse d'un fichier SAM
+def main() :   #fonction d'execution du script pour la lecture, stockage et analyse d'un fichier SAM
     print(sys.argv[0])
     print(sys.argv[1])
     file = sys.argv[1]
@@ -110,12 +110,12 @@ def main() :   #fonction d'execution du script de lecture, stockage et analyse d
         exit()
 
 
-def main() :  # main d'exécution du script
+main()  # main d'exécution du script
    
 
 
 
 
-main()
+
 
 
